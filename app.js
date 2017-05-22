@@ -31,7 +31,8 @@ window.onload = function(){
     watch.milliseconds = 0
     watch.minutes = 0
 
-    buttonOne.onclick = function(){
+    buttonOne.onclick = function(e){
+      e.preventDefault
       if (buttonOne.innerText === "Stop"){
         buttonOne.innerText = "Start"
         clearTimeout(temp)
@@ -43,7 +44,8 @@ window.onload = function(){
       }
     }
 
-    buttonTwo.onclick = function(){
+    buttonTwo.onclick = function(e){
+      e.preventDefault
       if (buttonTwo.innerText === "Lap"){
         watch.html = '<div class="laps">' + screen.innerText + '</div><hr>'
          lap.innerHTML += watch.html
