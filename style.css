@@ -57,6 +57,11 @@ body {
   margin-left: 40px;
 }
 
+#lap {
+  overflow-y: scroll;
+  height: 400px;
+}
+
 .laps {
   text-align: center;
   color: white;
