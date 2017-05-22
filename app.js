@@ -57,6 +57,8 @@ window.onload = function(){
       }
     }
 
+
+    //helper function adding 0
     function addZero(t){
       if (t < 10){
         return t =  "0" + t
