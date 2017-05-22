@@ -6,7 +6,6 @@ window.onload = function(){
   const lap = document.getElementById("lap")
   const time = new Date()
   let temp
-  let html
 
   var watch = {
     minutes: time.getMinutes(),
@@ -46,8 +45,8 @@ window.onload = function(){
 
     buttonTwo.onclick = function(){
       if (buttonTwo.innerText === "Lap"){
-        html = '<div class="laps">' + screen.innerText + '</div><hr>'
-         lap.innerHTML += html
+        watch.html = '<div class="laps">' + screen.innerText + '</div><hr>'
+         lap.innerHTML += watch.html
       } else {
         screen.innerText = "00:00:00"
         watch.seconds = 0
